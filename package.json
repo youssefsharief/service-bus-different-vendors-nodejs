@@ -1,0 +1,24 @@
+{
+  "name": "servicebusTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sb.js",
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "coverage": "nodemon --exec istanbul cover node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=jasmine.json",
+    "test": "nodemon --exec jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "dev": "nodemon ./src/bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "azure": "^2.2.1-preview",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "rabbit.js": "^0.4.4",
+    "servicebus": "^2.0.10"
+  }
+}
